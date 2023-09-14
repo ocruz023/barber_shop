@@ -10,12 +10,12 @@ class Stylist extends Model
         'id_branch','name'
     ];
 
-    public function branch()
+    public function Branch()
     {
         return $this->belongsTo(Branch::class, 'id_branch');
     }
 
-    public function appointments()
+    public function Appointment()
     {
         return $this->hasMany(Appointment::class, 'id_stylist');
     }

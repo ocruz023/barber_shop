@@ -10,7 +10,7 @@ class Branch extends Model
         'name','adress','phone'
     ];
 
-    public function stylists()
+    public function Stylists()
     {
         return $this->hasMany(Stylist::class, 'id_branch');
     }

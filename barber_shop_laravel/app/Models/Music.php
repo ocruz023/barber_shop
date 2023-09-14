@@ -10,7 +10,7 @@ class Music extends Model
         'genre'
     ];
 
-    public function appointments()
+    public function Appointment()
     {
         return $this->hasMany(Appointment::class, 'id_music');
     }

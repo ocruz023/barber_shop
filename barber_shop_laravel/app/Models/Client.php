@@ -10,7 +10,7 @@ class Client extends Model
         'name','email','phone','birthday_date'
     ];
 
-    public function appointments()
+    public function Appointment()
     {
         return $this->hasMany(Appointment::class, 'id_client');
     }

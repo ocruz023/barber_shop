@@ -10,12 +10,12 @@ class Schedule extends Model
         'id_branch','id_stylist','day_of_week','start_time','end_time'
     ];
 
-    public function branch()
+    public function Branch()
     {
         return $this->belongsTo(Branch::class, 'id_branch');
     }
 
-    public function stylist()
+    public function Stylist()
     {
         return $this->belongsTo(Stylist::class, 'id_stylist');
     }

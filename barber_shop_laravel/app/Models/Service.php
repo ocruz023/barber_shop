@@ -10,7 +10,7 @@ class Service extends Model
         'name','description','price','duration'
     ];
 
-    public function appointments()
+    public function Appointment()
     {
         return $this->hasMany(Appointment::class, 'id_service');
     } 

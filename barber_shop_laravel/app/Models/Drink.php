@@ -10,7 +10,7 @@ class Drink extends Model
         'name'
     ];
     
-    public function appointments()
+    public function Appointment()
     {
         return $this->hasMany(Appointment::class, 'id_drink');
     }
